@@ -1,4 +1,3 @@
-
 # How to use calculator:
 1. Run `python calculate.py`
 2. Enter the figure name. Available are Circle, Square.
@@ -19,3 +18,65 @@
 - Square: `P = 4a`
 - Triangle: `P = a + b + c`
 
+
+## rectangle
+```python
+import math
+def area(r): 
+'''Принимает число r, возвращает площадь круга pi * r * r'''
+    return math.pi * r * r
+
+def perimeter(r):
+'''Принимает число r, возвращает периметр круга 2 * pi * r'''
+    return 2 * math.pi * r
+```
+## Example of function input
+```python
+print(area(1))
+print(perimeter(1))
+```
+## Example of fynction output
+```python
+1*pi
+2*pi
+```
+## square
+```python
+def area(a):
+'''Принимает число a, возвращает площадь квадрата a * a'''
+    return a * a
+
+def perimeter(a):
+'''Принимает число a, возвращает периметр квадрата 4 * a'''
+    return 4 * a
+```
+## Example of function input
+```python
+print(area(1))
+print(perimeter(1))
+```
+## Example of fynction output
+```python
+1
+4
+```
+## triangle
+```python
+def area(a, b, c):
+'''Принимает число a, b, c возвращает ??? (a + b + c) / 2'''
+    return (a + b + c) / 2
+
+def perimeter(a, b, c):
+'''Принимает число a, b, c возвращает a + b + c'''
+    return a + b + c
+```
+## Example of function input
+```python
+print(area(1,2,3))
+print(perimeter(1,2,3))
+```
+## Example of fynction output
+```python
+3
+6
+```
