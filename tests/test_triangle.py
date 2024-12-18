@@ -36,3 +36,8 @@ def test_perimeter_with_negative_sides():
     a, b, c = -6, -8, -10
     with pytest.raises(AssertionError):
         perimeter(a, b, c)
+
+def test_area_zero():
+    x, y, z = 0, 0, 0
+    with pytest.raises(AssertionError):
+        area(x, y, z)
